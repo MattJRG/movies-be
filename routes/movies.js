@@ -5,7 +5,7 @@ const moviesController = require('../controllers/movies');
 
 router.get('/',  moviesController.getMovies);
 
-router.post(
+router.put(
   '/', (req, res) => moviesController.addMovie(req, res)
 );
 
